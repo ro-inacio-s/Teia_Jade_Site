@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="tailwind-config.js"></script>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="w-full top-0 sticky z-50 bg-[#faf9f4] dark:bg-[#00261b] shadow-[0_24px_48px_rgba(27,28,25,0.05)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+<div class="flex items-center gap-12">
+<a class="font-['Newsreader'] text-2xl font-bold text-[#00261b] dark:text-[#faf9f4] tracking-tighter" href="index.html">
+    <img src="Imagens/Logo.svg" alt="Teia Jade Logo" class="h-12 w-auto dark:invert" />
+</a>
+<div class="hidden md:flex gap-8 items-center">
+    <a class="nav-link active font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="galeria.html">Galeria</a>
+    <a class="nav-link font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="historia.html">História</a>
+    <a class="nav-link font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="guia.html">Guia de Cuidados</a>
+    <a class="nav-link font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="#footer">Contato</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-[#00261b] dark:text-[#faf9f4] cursor-pointer transition-all duration-300 ease-out hover:opacity-80 relative">
+    <span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+    <span class="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+<button class="md:hidden text-[#00261b] dark:text-[#faf9f4]">
+    <span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+
+<main class="max-w-screen-2xl mx-auto px-8 lg:px-12 py-20">
+<!-- Header Section -->
+<header class="mb-24 max-w-3xl">
+<h1 class="text-6xl md:text-8xl font-headline tracking-tight text-primary leading-none mb-8">
+            O Tear<br/><span class="italic font-light">Esculpido</span>
+</h1>
+<p class="text-lg md:text-xl font-body text-on-surface-variant leading-relaxed">
+            Uma coleção de narrativas tecidas à mão. Explorando a tensão entre a rigidez arquitetônica e a graça fluida das fibras naturais.
+        </p>
+</header>
+<!-- Filter Bar -->
+<div class="filtros flex flex-wrap items-center gap-4 mb-20">
+<span class="text-sm font-label uppercase tracking-widest text-on-surface-variant/60 mr-4">Filtrar por:</span>
+<button class="btn-interactive px-6 py-2 rounded-full bg-primary text-on-primary font-label text-sm tracking-wide transition-colors">Todas as Obras</button>
+<button class="btn-interactive px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm tracking-wide hover:bg-secondary-container transition-colors cursor-pointer">Escultural</button>
+<button class="btn-interactive px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm tracking-wide hover:bg-secondary-container transition-colors cursor-pointer">Funcional</button>
+<button class="btn-interactive px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-sm tracking-wide hover:bg-secondary-container transition-colors cursor-pointer">Acessórios</button>
+</div>
+<!-- Asymmetrical Gallery Grid - Managed by JS -->
+<div id="galeria-container" class="grid grid-cols-1 md:grid-cols-12 gap-y-24 md:gap-x-12 lg:gap-x-20">
+    <!-- Itens preenchidos via dados-galeria.js -->
+</div>
+<!-- Featured Texture Section -->
+<section class="mt-48 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-1 bg-primary text-on-primary p-12 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-6" data-icon="temp_preferences_custom">temp_preferences_custom</span>
+<h3 class="text-4xl font-headline leading-tight mb-4">O Ethos do<br/>Material</h3>
+</div>
+<p class="font-body text-on-primary/70 leading-relaxed">
+                Nossas fibras vêm de algodão local cultivado regenerativamente e sobras de seda resgatadas. Cada nó é um compromisso com a longevidade.
+            </p>
+</div>
+<div class="md:col-span-2 bg-surface-container-high relative overflow-hidden min-h-[400px]">
+<img loading="lazy" alt="Textura de macramê em close" class="absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi7rRF8z-uGcAKWCBSnLc8XSBL9M4NbtUNfdfNDd4L-0ciwQX896Qtf9R8MC7M6S3PSVaB5-CRpbEG0D9OYIz0Kf13YwtmBcuw1RAlfrU1DWCrl1FP6GIIRym2Brc8kf5nONFZSON0FZX7uiVR7Miv3K9pKTYWogQI8TasfkQ1fU6dKzDx0j18Xb3en4UBCLN_S7QZ2lUQ-ADlOcZ4y0a_h56SnnIKrgxDFBKFZTaRlJC5aMhuPLl7U2i8-pG4EM-KayRJeecc6jWB"/>
+<div class="absolute inset-0 p-12 flex items-end">
+<p class="text-2xl font-headline text-primary max-w-sm bg-surface/80 backdrop-blur-md p-6">
+                    "A textura é a linguagem da mão, uma conversa entre o criador e o material."
+                </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer id="footer" class="w-full mt-24 bg-[#0b3d2e] dark:bg-[#001a12]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-['Newsreader'] text-xl italic text-[#faf9f4]">Teia Jade</span>
+<p class="font-['Manrope'] text-sm uppercase tracking-widest text-[#faf9f4]">
+                    © 2026 Teia Jade. Arte em nós, alma em fibra.
+                </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+<a class="btn-interactive flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[#faf9f4]/30 text-[#faf9f4] hover:bg-[#faf9f4] hover:text-[#0b3d2e] transition-all duration-300 font-['Manrope'] text-sm uppercase tracking-widest group" href="https://wa.me/5511942673681?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20pe%C3%A7as%20em%20macram%C3%AA." target="_blank" rel="noopener noreferrer">
+<span>Fale no WhatsApp</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" data-icon="chat">chat</span>
+</a>
+<a class="btn-interactive flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[#faf9f4]/30 text-[#faf9f4] hover:bg-[#faf9f4] hover:text-[#0b3d2e] transition-all duration-300 font-['Manrope'] text-sm uppercase tracking-widest group" href="https://www.instagram.com/teia.jade/" rel="noopener noreferrer" target="_blank">
+<span>Siga no Instagram</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" data-icon="arrow_outward">arrow_outward</span>
+</a>
+</div>
+</div>
+</footer>
+
+<script src="dados-galeria.js"></script>
+<script src="render-galeria.js"></script>
+</body></html>

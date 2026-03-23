@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Teia Jade - O Fio que nos Une</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="tailwind-config.js"></script>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<nav class="w-full top-0 sticky z-50 bg-[#faf9f4] dark:bg-[#00261b] shadow-[0_24px_48px_rgba(27,28,25,0.05)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+<div class="flex items-center gap-12">
+<a class="font-['Newsreader'] text-2xl font-bold text-[#00261b] dark:text-[#faf9f4] tracking-tighter" href="index.html">
+    <img src="Imagens/Logo.svg" alt="Teia Jade Logo" class="h-12 w-auto dark:invert" />
+</a>
+<div class="hidden md:flex gap-8 items-center">
+    <a class="nav-link font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="galeria.html">Galeria</a>
+    <a class="nav-link active font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="historia.html">História</a>
+    <a class="nav-link font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="guia.html">Guia de Cuidados</a>
+    <a class="nav-link font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="#footer">Contato</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-[#00261b] dark:text-[#faf9f4] cursor-pointer transition-all duration-300 ease-out hover:opacity-80 relative">
+    <span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+    <span class="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+<button class="md:hidden text-[#00261b] dark:text-[#faf9f4]">
+    <span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-8 md:px-24 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 z-10">
+<span class="font-label text-sm uppercase tracking-[0.2em] text-primary/60 mb-6 block">Nossa História</span>
+<h1 class="font-headline text-7xl md:text-9xl text-primary leading-[0.9] tracking-tighter text-balanced italic">
+                        O Fio que <br/>nos Une
+                    </h1>
+<p class="mt-12 text-lg md:text-xl text-on-surface-variant max-w-lg leading-relaxed font-light">
+                        Cada nó é uma conversa silenciosa com a floresta. Na Teia Jade, não apenas tecemos algodão; capturamos o ritmo das matas e a paciência do ofício.
+                    </p>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden rounded-lg sculpted-shadow transform md:translate-y-12">
+<img alt="Mãos da artista trabalhando com fibra natural" class="w-full h-full object-cover" data-alt="Close up of artist hands weaving cream cotton rope" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBANpCKa3JMcbiK-eAUh4SCVYiwrOSy62X7I_i78sHto7i4CuHJ3FaFssCFI-sUi8l1MBgyf206CdSbOjsE8g2COFHiSQ8eLNGX0Rv6kL5I6ScMarPTc5iuiPU4kK-mphXtdglitUxwzBTFR7I49yBadtTep0bmzTFLcNNgkMXmOvLua6EQnh0mmRyS5aHmm0LP5kxSospLIrYBDl4W-ihR36FN4FraMTPCQklMf_YgyXfKf748Bo342a3HamQpTP_XYuRITPNeU3NQ"/>
+</div>
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-secondary-container/30 backdrop-blur-xl rounded-full z-0"></div>
+</div>
+</div>
+</section>
+<!-- The Inspiration -->
+<section class="py-32 md:py-48 bg-primary-container text-surface">
+<div class="max-w-screen-2xl mx-auto px-8 md:px-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1 relative">
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-[3/4] bg-primary overflow-hidden rounded transform translate-y-8">
+<img loading="lazy" alt="Luz solar na floresta profunda" class="w-full h-full object-cover opacity-80" data-alt="Sunlight filtering through tall green forest trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAraP141hmYqiwcLyqK7mX-x-TJvUtQwfrMUtsGsT4NM1DWGhP9eso4BMpFjuQWVeYO8p_lhJQNaDIXv125y9m3OwIRfpALXEqFD9t2Cg7TZg4esHDr0A6ZQ6M2-oZKY_7_AtJtM3sYwTTPPlQs3Gpr3joiLZV2JyG9M3muxjLpkWAUW80I4Qk9uRkJ_B4UXBtVRbzoUrBgEqj9lLKPCKhZV9pmytUQ46_SQxLPoEgbu6LWOrFAX1O4sH7jMOYQIbvN6x_KYEC77J8D"/>
+</div>
+<div class="aspect-[3/4] bg-primary overflow-hidden rounded">
+<img loading="lazy" alt="Detalhe macro de nó" class="w-full h-full object-cover" data-alt="Extreme macro shot of intricate white macrame knots" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb-4xEPtW6JDeLcDwUgZWtQumM9Yy_wrTrzDuwWWz9JtPmB69VBISIX-2e88tAQAhsze_PgFbzd-6Owy_bqVaVj2UpUijJBer3i5SCsqomgcByOdR75JT1-1olEqYoLf6AiTNGizenqi85LC4DxNNaDtcEdmtdwP77RAHAR35EhXcDzU8DxjKkNUCCpy13Cwy_bVoO5fnBGhEkW6qvZAJ4HIk7FxLrKDJ3NEhw4uVdKSe-NgcvSnrMUg8wbiFcqH7DEOWmxFXPF7qU"/>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="font-headline text-5xl md:text-6xl mb-8 text-on-primary-container italic">A Inspiração</h2>
+<div class="space-y-6 text-on-primary-container/80 text-lg leading-relaxed font-light">
+<p>Minha jornada começou sob a copa da Mata Atlântica. Fiquei fascinada pela maneira como os cipós se entrelaçavam em troncos antigos â€” padrões naturais de força e graça que nenhuma máquina poderia replicar.</p>
+<p>No macramê, encontrei um meio que espelha essa complexidade orgânica. Usando apenas juta sustentável e algodão orgânico, busco trazer essa energia enraizada e restauradora da floresta para o lar moderno.</p>
+</div>
+<div class="mt-12 flex flex-wrap gap-3">
+<span class="px-6 py-2 bg-primary text-xs uppercase tracking-widest rounded-full border border-outline-variant/10">Algodão Orgânico</span>
+<span class="px-6 py-2 bg-primary text-xs uppercase tracking-widest rounded-full border border-outline-variant/10">Origem Sustentável</span>
+<span class="px-6 py-2 bg-primary text-xs uppercase tracking-widest rounded-full border border-outline-variant/10">Nascido na Mata</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Workshop -->
+<section class="py-32 md:py-48 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-8 md:px-24">
+<div class="text-center mb-24">
+<h2 class="font-headline text-5xl md:text-6xl text-primary mb-4 italic">O Workshop</h2>
+<p class="font-body text-on-surface-variant tracking-wide">Onde o tempo desacelera e as fibras ganham forma.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:h-[800px]">
+<div class="md:col-span-8 h-full">
+<div class="w-full h-full bg-surface-container-low rounded-lg overflow-hidden group">
+<img loading="lazy" alt="Atmosfera do workshop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sunlit artist studio with hanging macrame wall art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp1LBwKu1VLWjCTYcNP9kqDWhJf7VqjX35VAhaj6O0o1swFm0ml_81I8mlNlRgFTC07Zz25-4mGY-7173Rl5GtEx_UAojDq6BpG7PvWWvNjW2X2cQpFOnATKM5Pv2xF7YlZxWSiyugwXp5JAi0wjmYqof568U3nC_53ZY7bJF-GPBv8ds_FzPKl8YW19LzkNdL6xO8FhrcLzDCk3wEkNKsp6hgE7ubydxjb9h5ZgrWHKeKv7lzmohX8N_mZSMC8O08gnkCJ8rpA0yp"/>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="flex-1 bg-surface-container-high rounded-lg overflow-hidden group">
+<img loading="lazy" alt="Processo criativo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of wooden dowel with cotton cords tied" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpOvgTjOifZbPKBq_4LJSx2ZE--7b3zOmb49Dj5GJf7qSY5R5wsJ4sClCyc40YX28hyvoKBxi6nbIF26ln6Ohc7eWEQcZK4HOHimDGda15UAMEaCr5aVJN0q1EaFoNRGQlB-U3Egtp0hhZ6V803VBB5-kmUqW-PVUNUWYLRXRUeyVt5LW9CFFkoLvWrE818oZKagwA7oU2nmiOFQ9uMQ_zoVI_spgUcxzEN0PqEbs2xyfGe3btYCy44fFlKzGXn5rq1TkpD3ZbDCXh"/>
+</div>
+<div class="flex-1 bg-primary text-surface p-10 rounded-lg flex flex-col justify-end">
+<span class="material-symbols-outlined text-4xl mb-4 text-on-primary-container" data-icon="temp_preferences_eco">temp_preferences_eco</span>
+<h3 class="font-headline text-3xl italic mb-2">A Paciência é a Ferramenta</h3>
+<p class="text-sm opacity-70 leading-relaxed font-body">Algumas peças levam dias, outras semanas. Nunca apressamos o nó, pois um ponto apressado perde sua alma.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- Footer -->
+<footer id="footer" class="w-full mt-24 bg-[#0b3d2e] dark:bg-[#001a12]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-['Newsreader'] text-xl italic text-[#faf9f4]">Teia Jade</span>
+<p class="font-['Manrope'] text-sm uppercase tracking-widest text-[#faf9f4]">
+                    © 2026 Teia Jade. Arte em nós, alma em fibra.
+                </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+<a class="btn-interactive flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[#faf9f4]/30 text-[#faf9f4] hover:bg-[#faf9f4] hover:text-[#0b3d2e] transition-all duration-300 font-['Manrope'] text-sm uppercase tracking-widest group" href="https://wa.me/5511942673681?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20pe%C3%A7as%20em%20macram%C3%AA." target="_blank" rel="noopener noreferrer">
+<span>Fale no WhatsApp</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" data-icon="chat">chat</span>
+</a>
+<a class="btn-interactive flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[#faf9f4]/30 text-[#faf9f4] hover:bg-[#faf9f4] hover:text-[#0b3d2e] transition-all duration-300 font-['Manrope'] text-sm uppercase tracking-widest group" href="https://www.instagram.com/teia.jade/" rel="noopener noreferrer" target="_blank">
+<span>Siga no Instagram</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" data-icon="arrow_outward">arrow_outward</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

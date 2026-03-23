@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guia da Teia - Teia Jade</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind-config.js"></script>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-[#faf9f4] dark:bg-[#00261b] shadow-[0_24px_48px_rgba(27,28,25,0.05)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+<div class="flex items-center gap-12">
+<a class="font-['Newsreader'] text-2xl font-bold text-[#00261b] dark:text-[#faf9f4] tracking-tighter" href="index.html">
+    <img src="Imagens/Logo.svg" alt="Teia Jade Logo" class="h-12 w-auto dark:invert" />
+</a>
+<div class="hidden md:flex gap-8 items-center">
+    <a class="nav-link font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="galeria.html">Galeria</a>
+    <a class="nav-link font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="historia.html">História</a>
+    <a class="nav-link active font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="guia.html">Guia de Cuidados</a>
+    <a class="nav-link font-['Newsreader'] font-medium text-lg tracking-tight text-primary transition-all cursor-pointer duration-300 ease-out" href="#footer">Contato</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-[#00261b] dark:text-[#faf9f4] cursor-pointer transition-all duration-300 ease-out hover:opacity-80 relative">
+    <span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+    <span class="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+<button class="md:hidden text-[#00261b] dark:text-[#faf9f4]">
+    <span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section: Editorial Intro -->
+<section class="relative pt-24 pb-16 px-8 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-7">
+<span class="font-label text-sm uppercase tracking-widest text-secondary mb-4 block">Conhecimento &amp; Cuidado</span>
+<h1 class="text-6xl md:text-8xl font-headline font-medium tracking-tighter text-primary leading-none mb-8">Guia da Teia</h1>
+<p class="text-xl md:text-2xl font-body text-on-surface-variant max-w-xl leading-relaxed">
+                        Um manual dedicado a quem valoriza a arte manual, as fibras naturais e o tempo das coisas feitas com a alma.
+                    </p>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover" data-alt="Close up of hands weaving intricate macrame knots" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLG2jVmHFs3zwBwVs3D5Jr1N-O-6XRJdVIFhMkNxUlrLwn34xvIad0KpCls7VnQ0lP7PUFk51lNuAidYFIQOokMOus8p36JGeqjnZLn9R9eUY7Beil3mTP_X9UePkqkKzc1hYmuyrYdnUQfIZcQNqOj000VkA1RPTWjwixaflJ4Nu0wcJCBc0aqV5MsGsxwBadkZ_eS2NJ59P6N40Qzrkj5zRHOvr3mvzsNczLgnvvPEPgIFAf3QTX6eMy7l_Vwt8d1l_iF31j9bN1"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-primary-container text-on-primary p-8 rounded-lg shadow-xl hidden md:block">
+<p class="font-headline italic text-2xl">"Cada nó guarda uma intenção."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Sobre Produtos e Pedidos (Asymmetric Grid) -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row gap-16">
+<div class="md:w-1/3">
+<h2 class="text-4xl font-headline text-primary mb-6">Produtos e Pedidos</h2>
+<p class="font-body text-on-surface-variant mb-8">Nossas peças são divididas entre pronta entrega e encomendas personalizadas, respeitando o ritmo artesanal.</p>
+<div class="bg-surface p-6 rounded-lg space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">payments</span>
+<div>
+<p class="font-label font-bold text-xs uppercase tracking-wider text-primary">Pagamento</p>
+<p class="text-sm font-body">PIX (5% desc.) ou Cartão de Crédito.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="font-label font-bold text-xs uppercase tracking-wider text-primary">Produção</p>
+<p class="text-sm font-body">15 a 30 dias úteis para encomendas.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="bg-surface p-10 rounded-lg group hover:bg-primary transition-colors duration-500">
+<h3 class="text-2xl font-headline mb-4 group-hover:text-surface">Teia Pronta</h3>
+<p class="font-body text-on-surface-variant group-hover:text-surface/80 leading-relaxed mb-6">Peças únicas e autorais já finalizadas, disponíveis para envio imediato. Ideais para quem busca um presente especial ou decoração instantânea.</p>
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:text-surface-container-highest">inventory_2</span>
+</div>
+<div class="bg-surface p-10 rounded-lg group hover:bg-primary transition-colors duration-500">
+<h3 class="text-2xl font-headline mb-4 group-hover:text-surface">Sua Teia</h3>
+<p class="font-body text-on-surface-variant group-hover:text-surface/80 leading-relaxed mb-6">Onde a sua ideia ganha forma. Escolha cores, dimensões e pedras. O pedido é realizado exclusivamente via Direct no Instagram.</p>
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:text-surface-container-highest">edit_note</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Guia de Cuidados (Editorial Cards) -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-headline text-primary text-center mb-16">Ritual de Cuidados</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Large Pieces -->
+<div class="space-y-6">
+<div class="aspect-square bg-surface-container-highest overflow-hidden rounded-full">
+<img loading="lazy" class="w-full h-full object-cover" data-alt="Large macrame wall hanging on a wooden stick" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlvJ0ppMB5yvGVdeivqjIpPJRzDSZi0D4MDmlOIADEK8tNpIjRQsBduoBM6PD7QQhImdyq_TnJnJqtGxmtmEGznWy7VsVVfADo6oVH_3JB1ZbeD7PUqLMnENspXtAyi-H5kkc8-jc745HoQydgxbTXA2pIH4OL2tA7TflU_NHpZqsC5YE8K6lFdQFjxBdlDc7FntMSNlkRqDPyMiokgCNKUWWI67xD5pBZ7pgfkBttkdGrwpAh9AK2iwtTO0J_M-4vvEq8AO0v99kc"/>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary-container text-3xl mb-2">blanket</span>
+<h3 class="text-2xl font-headline mb-2">Peças Grandes</h3>
+<p class="font-body text-on-surface-variant text-sm px-4">Evite exposição direta ao vento excessivo para não emaranhar as franjas. Utilize um pente de cerdas largas para alinhar as pontas suavemente.</p>
+</div>
+</div>
+<!-- Colored & Plants -->
+<div class="space-y-6">
+<div class="aspect-square bg-surface-container-highest overflow-hidden rounded-full">
+<img loading="lazy" class="w-full h-full object-cover" data-alt="Green plant hanger with a ceramic pot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKnGnpsrUd4tepSYrpJoMWB0qZhC470GE3_jfEpZecpOlIFFuww7noQnFWX21W6JXbfQNHnIDkrC-lwxd9zU_Ni7-dF_yO-ur4aK52UMzsjO30RcOhbZNZLb8MV1fjoguKB1y5cvM59JVa3JblBZQLsHRnfrz3mT2-Mlejh_-npgPk3i8YvtbuolhzXUZMVYjlogRfFkArhU6e3XdISH5ymbz36S_M7zXmIDqvZ1ky6PvdP8S3Fwkh8e1n-inK2DLCSreKaqkzTALC"/>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary-container text-3xl mb-2">potted_plant</span>
+<h3 class="text-2xl font-headline mb-2">Hangers &amp; Coloridas</h3>
+<p class="font-body text-on-surface-variant text-sm px-4">Cuidado ao regar: retire o vaso para não molhar a fibra. Peças coloridas podem desbotar sob sol forte constante.</p>
+</div>
+</div>
+<!-- Crystals & Kokedamas -->
+<div class="space-y-6">
+<div class="aspect-square bg-surface-container-highest overflow-hidden rounded-full">
+<img loading="lazy" class="w-full h-full object-cover" data-alt="Crystal geode wrapped in macrame thread" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaZF-hnMr4WkBnQlYZXFkkOn3VcA582iBj-k9b27QVbOXpkAb-NJ8jPllPNpVUxyHnkuYlxRFzakvYnrxtfUjS0RMqBKh21Jw5YlyVCzMcrzxOQDyncODDeHenbxyIVu6IjHKkAR5gs21vSAXFHfXG1mznvXBp11g9Fnxx7khucta0w4LPal5Y0ipZuy-jISpKLZ1ECw3h7Z4UHFs6R64ZFRouhwKBF9uM9o6ZAaMQTdwdGgaIyVPST79fBwslGVXf8kq9BoxeZXZy"/>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary-container text-3xl mb-2">diamond</span>
+<h3 class="text-2xl font-headline mb-2">Cristais &amp; Kokedamas</h3>
+<p class="font-body text-on-surface-variant text-sm px-4">Limpe os cristais com pano seco. Para kokedamas, mergulhe apenas a bola de musgo, preservando os fios de suporte secos.</p>
+</div>
+</div>
+</div>
+<div class="mt-20 p-12 bg-surface-container-high rounded-xl border-l-4 border-primary">
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<span class="material-symbols-outlined text-5xl text-primary">cleaning_services</span>
+<div>
+<h4 class="text-2xl font-headline mb-2 text-primary">Regra de Ouro: Lavagem</h4>
+<p class="font-body text-on-surface-variant leading-relaxed italic">
+                            O macramé decorativo não deve ser lavado em máquina. Caso seja necessário, realize limpeza a seco ou use um pano levemente úmido com sabão neutro apenas na área afetada. Nunca esfregue as fibras.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Tudo sobre Macramê (Bento Grid Inspired) -->
+<section class="py-24 px-8 bg-primary text-surface overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 space-y-6">
+<h2 class="text-5xl md:text-7xl font-headline tracking-tighter mb-8">O que é Macramê?</h2>
+<p class="text-xl font-body leading-relaxed opacity-90 max-w-2xl">
+                            Derivado do árabe <span class="italic">"migramah"</span> (franja), o macramê é a arte de criar tecidos apenas com nós, sem agulhas. Uma técnica milenar que viajou de marinheiros a rainhas, hoje reconectando o moderno ao ancestral.
+                        </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
+<div class="bg-primary-container p-6 rounded-lg border border-surface/10">
+<span class="font-headline text-3xl text-secondary-container mb-2 block">Laçada</span>
+<p class="text-sm font-body opacity-70">O ponto de partida. Onde o fio abraça o suporte e a jornada começa.</p>
+</div>
+<div class="bg-primary-container p-6 rounded-lg border border-surface/10">
+<span class="font-headline text-3xl text-secondary-container mb-2 block">Quadrado</span>
+<p class="text-sm font-body opacity-70">A base estrutural. Simboliza o equilíbrio entre as tensões do fio.</p>
+</div>
+<div class="bg-primary-container p-6 rounded-lg border border-surface/10">
+<span class="font-headline text-3xl text-secondary-container mb-2 block">União</span>
+<p class="text-sm font-body opacity-70">O nó que finaliza e protege, garantindo que a teia permaneça eterna.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 relative flex items-center justify-center">
+<div class="absolute inset-0 bg-secondary/20 blur-3xl rounded-full"></div>
+<img loading="lazy" class="relative z-10 w-full h-auto rounded-lg rotate-3 hover:rotate-0 transition-transform duration-700" data-alt="Macro photo of natural cotton fibers and knots" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcanf_NFWtDcAmpVkkCHJzuGbCUpsLVltfSOumMlvRgu_t2u0IT4gMWVpbOIiAaexie4ktUlkKt23GJWWMgn9SdfrsW4ddC2QUvyWl_n2KBFEi1Vq9gpWpKXtjk86kldeqRRNBSFrqRrprRrj2t2tE4pXTxf-PVwzCVSmvCgO5udbZBeJLp7vbn0uyoiHA_HPA-tyV8D6KlfcZLZIxNQ5LnEQwg3ahY4UI_plRm_7U61Izdo2kU4-5jptpnk7ehNQUP5WPf8z-dkWs"/>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- Footer -->
+<footer id="footer" class="w-full mt-24 bg-[#0b3d2e] dark:bg-[#001a12]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-['Newsreader'] text-xl italic text-[#faf9f4]">Teia Jade</span>
+<p class="font-['Manrope'] text-sm uppercase tracking-widest text-[#faf9f4]">
+                    © 2026 Teia Jade. Arte em nós, alma em fibra.
+                </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+<a class="btn-interactive flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[#faf9f4]/30 text-[#faf9f4] hover:bg-[#faf9f4] hover:text-[#0b3d2e] transition-all duration-300 font-['Manrope'] text-sm uppercase tracking-widest group" href="https://wa.me/5511942673681?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20as%20pe%C3%A7as%20em%20macram%C3%AA." target="_blank" rel="noopener noreferrer">
+<span>Fale no WhatsApp</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" data-icon="chat">chat</span>
+</a>
+<a class="btn-interactive flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[#faf9f4]/30 text-[#faf9f4] hover:bg-[#faf9f4] hover:text-[#0b3d2e] transition-all duration-300 font-['Manrope'] text-sm uppercase tracking-widest group" href="https://www.instagram.com/teia.jade/" rel="noopener noreferrer" target="_blank">
+<span>Siga no Instagram</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" data-icon="arrow_outward">arrow_outward</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
