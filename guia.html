@@ -32,23 +32,35 @@
 </div>
 </div>
 <div class="flex items-center gap-6">
-<button class="text-[#00261b] dark:text-[#faf9f4] cursor-pointer transition-all duration-300 ease-out hover:opacity-80 relative">
+    <button class="text-[#00261b] dark:text-[#faf9f4] cursor-pointer transition-all duration-300 ease-out hover:opacity-80 relative">
     <span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
     <span class="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full"></span>
-</button>
-<button class="md:hidden text-[#00261b] dark:text-[#faf9f4]">
+    </button>
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
+    <label for="menu-toggle" class="md:hidden text-[#00261b] dark:text-[#faf9f4] cursor-pointer">
     <span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-</div>
+    </label>
+    <!-- CSS Checkbox Mobile Menu Overlay -->
+    <div class="fixed top-0 right-[-100%] w-full h-[100dvh] bg-[#faf9f4] dark:bg-[#00261b] z-[100] flex flex-col justify-center items-center gap-10 transition-all duration-500 ease-in-out peer-checked:right-0 shadow-2xl">
+    <label for="menu-toggle" class="absolute top-8 right-8 text-[#00261b] dark:text-[#faf9f4] cursor-pointer hover:opacity-70">
+    <span class="material-symbols-outlined text-4xl" data-icon="close">close</span>
+    </label>
+    <a class="block w-full text-center font-serif text-4xl sm:text-5xl font-medium hover:opacity-70 active:opacity-50" style="color: #00261b; display: block;" href="index.html">Home</a>
+    <a class="block w-full text-center font-serif text-4xl sm:text-5xl font-medium hover:opacity-70 active:opacity-50" style="color: #00261b; display: block;" href="galeria.html">Galeria</a>
+    <a class="block w-full text-center font-serif text-4xl sm:text-5xl font-medium hover:opacity-70 active:opacity-50" style="color: #00261b; display: block;" href="historia.html">História</a>
+    <a class="block w-full text-center font-serif text-4xl sm:text-5xl font-medium hover:opacity-70 active:opacity-50" style="color: #00261b; display: block;" href="guia.html">Guia de Cuidados</a>
+    <label for="menu-toggle" class="block w-full text-center cursor-pointer"><a class="font-serif text-4xl sm:text-5xl font-medium hover:opacity-70 active:opacity-50" style="color: #00261b; display: block;" href="#footer">Contato</a></label>
+    </div>
+    </div>
 </div>
 </nav>
 <main>
 <!-- Hero Section: Editorial Intro -->
-<section class="relative pt-24 pb-16 px-8 max-w-7xl mx-auto overflow-hidden">
+<section class="relative pt-24 pb-16 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
 <div class="md:col-span-7">
 <span class="font-label text-sm uppercase tracking-widest text-secondary mb-4 block">Conhecimento &amp; Cuidado</span>
-<h1 class="text-6xl md:text-8xl font-headline font-medium tracking-tighter text-primary leading-none mb-8">Guia da Teia</h1>
+<h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-headline font-medium tracking-tighter text-primary leading-none mb-6">Guia da Teia</h1>
 <p class="text-xl md:text-2xl font-body text-on-surface-variant max-w-xl leading-relaxed">
                         Um manual dedicado a quem valoriza a arte manual, as fibras naturais e o tempo das coisas feitas com a alma.
                     </p>

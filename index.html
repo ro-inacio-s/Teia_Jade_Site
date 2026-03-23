@@ -28,9 +28,21 @@
 <span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
 <span class="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full"></span>
 </button>
-<button class="md:hidden text-[#00261b] dark:text-[#faf9f4]">
+<input type="checkbox" id="menu-toggle" class="peer hidden" />
+<label for="menu-toggle" class="md:hidden text-[#00261b] dark:text-[#faf9f4] cursor-pointer">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
+</label>
+<!-- CSS Checkbox Mobile Menu Overlay -->
+<div class="fixed top-0 right-[-100%] w-full h-[100dvh] bg-[#faf9f4] dark:bg-[#00261b] z-[100] flex flex-col justify-center items-center gap-10 transition-all duration-500 ease-in-out peer-checked:right-0 shadow-2xl">
+<label for="menu-toggle" class="absolute top-8 right-8 text-[#00261b] dark:text-[#faf9f4] cursor-pointer hover:opacity-70">
+<span class="material-symbols-outlined text-4xl" data-icon="close">close</span>
+</label>
+<a class="block w-full text-center font-serif text-4xl sm:text-5xl font-medium hover:opacity-70 active:opacity-50" style="color: #00261b; display: block;" href="index.html">Home</a>
+<a class="block w-full text-center font-serif text-4xl sm:text-5xl font-medium hover:opacity-70 active:opacity-50" style="color: #00261b; display: block;" href="galeria.html">Galeria</a>
+<a class="block w-full text-center font-serif text-4xl sm:text-5xl font-medium hover:opacity-70 active:opacity-50" style="color: #00261b; display: block;" href="historia.html">História</a>
+<a class="block w-full text-center font-serif text-4xl sm:text-5xl font-medium hover:opacity-70 active:opacity-50" style="color: #00261b; display: block;" href="guia.html">Guia de Cuidados</a>
+<label for="menu-toggle" class="block w-full text-center cursor-pointer"><a class="font-serif text-4xl sm:text-5xl font-medium hover:opacity-70 active:opacity-50" style="color: #00261b; display: block;" href="#footer">Contato</a></label>
+</div>
 </div>
 </div>
 </nav>
@@ -45,7 +57,7 @@
 <div class="flex flex-col justify-center space-y-8">
 <div class="space-y-4">
 <span class="label-md font-sans tracking-[0.2em] text-primary/60 uppercase">Tecido à mão na floresta</span>
-<h1 class="font-serif text-6xl md:text-8xl leading-tight text-primary">
+<h1 class="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-none md:leading-tight text-primary">
                             A Arte de Tecer <br/>Histórias em Nós
                         </h1>
 </div>
